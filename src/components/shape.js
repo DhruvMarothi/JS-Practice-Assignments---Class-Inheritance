@@ -5,7 +5,7 @@ import { Component } from "react";
 class Shape extends Component {
   constructor(color) {
     super();
-    this.color = "red";
+    this.color = "yellow";
   }
   drawShape() {
     console.log("circle is drawn!");
