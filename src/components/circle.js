@@ -1,23 +1,16 @@
 // import using require
-const React = require("react");
-const { Component } = require("react");
-const Shape = require("./shape.js");
+const Shape = require("./shape");
 
 // declare class
-class circle extends React.Component {
-  calculateArea = () => {
+class Circle extends Shape {
+  constructor() {
+    super();
+    this.color = "blue";
+  }
+  calculateArea() {
     console.log("calculateArea method is overidden!");
-  };
-
-  render() {
-    return (
-      <div>
-        <Shape />
-      </div>
-    );
   }
 }
-
-module.exports = circle;
+module.exports = Circle;
 
 // export class using module.exports
